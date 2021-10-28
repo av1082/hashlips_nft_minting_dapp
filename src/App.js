@@ -414,7 +414,7 @@ function App() {
           </div>
 
           <div class="description" style={{marginBottom: 40}}>
-            Every Billie minted is created algorythmically on the ERC-721 token. No two Billies are the same. Once minted, each Billie will live on the blockchain indefinitely and cannot be altered.
+            Every Billie minted is created algorithmically on the ERC-721 token. No two Billies are the same. Once minted, each Billie will live on the blockchain indefinitely and cannot be altered.
           </div>
 
           <div class="description">Below is the pricing schedule. Each new wave will unlock after the previous one sells out.</div>
