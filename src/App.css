@@ -111,7 +111,7 @@ div.header {
   flex-direction: row;
   justify-content: flex-end;
   padding-top: 2%;
-  padding-right: 10%;
+  padding-right: 5%;
 }
 
 @keyframes blink-caret {
