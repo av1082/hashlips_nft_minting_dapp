@@ -1,0 +1,487 @@
+.body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: rgb(54, 57, 56);
+  background: linear-gradient(0deg, rgb(33, 34, 33) 0%, rgb(0, 22, 16) 100%);
+  background-blend-mode: darken;
+}
+
+.App {
+  text-align: center;
+  background-color: #022503;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.slider {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 60%;
+  right: 32px;
+  font-size: 3rem;
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 60%;
+  left: 32px;
+  font-size: 3rem;
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+div.header {
+  position: fixed;
+  top: 0;
+  background-color: rgb(0, 22, 16);
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 2%;
+  padding-right: 10%;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00e600;
+  }
+}
+
+.faqDetails {
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: #950bf1;
+}
+
+@media screen and (max-width: 600px) {
+  div.about {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-bottom: 10%;
+  }
+
+  div.roadmap {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+  }
+
+  div.faq {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+    font-family: "Chakra Petch", sans-serif;
+  }
+
+  div.team {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding-top: 15%;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-bottom: 10%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  div.title {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 300;
+    font-family: "Chakra Petch", sans-serif;
+  }
+
+  div.subtitle {
+    color: #00e600;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    font-family: "Chakra Petch", sans-serif;
+  }
+
+  div.soon {
+    color: #00e600;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-family: "Chakra Petch", sans-serif;
+    overflow: hidden;
+    border-right: 0.1em solid #00e600;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  div.description {
+    flex: 1;
+    align-self: flex-start;
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: "Chakra Petch", sans-serif;
+    line-height: 1.1;
+  }
+
+  div.story {
+    flex: 1;
+    align-self: flex-start;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    font-weight: 300;
+    font-family: "Chakra Petch", sans-serif;
+    line-height: 1.1;
+    box-shadow: 0 0 20px rgb(106, 250, 39);
+    padding: 3%;
+    border-radius: 10px;
+  }
+
+  div.beyond {
+    color: var(--white);
+    font-size: 35px;
+    font-weight: 300;
+    font-family: "Chakra Petch", sans-serif;
+    letter-spacing: 10px;
+  }
+
+  .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    color: white;
+    font-family: "Chakra Petch", sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .styled-table thead tr {
+    background-color: #24282e;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+  }
+
+  .styled-table tbody tr {
+    border-bottom: 1px solid #00e600;
+  }
+
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #24282e;
+  }
+
+  .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #00e600;
+  }
+
+  .styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #b252f1;
+  }
+
+  div.countdown {
+    color: white;
+    font-size: 20px;
+    font-family: "Chakra Petch", sans-serif;
+    padding: 10;
+    background-color: transparent;
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  div.about {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12%;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-bottom: 12%;
+  }
+
+  div.roadmap {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12%;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-bottom: 12%;
+  }
+
+  div.faq {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12%;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-bottom: 12%;
+    font-family: "Chakra Petch", sans-serif;
+  }
+
+  div.team {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12%;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-bottom: 12%;
+  }
+
+  div.title {
+    color: var(--white);
+    font-size: 80px;
+    font-weight: 300;
+    font-family: "Chakra Petch", sans-serif;
+  }
+
+  div.subtitle {
+    color: #00e600;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 14px;
+    font-family: "Chakra Petch", sans-serif;
+  }
+
+  div.soon {
+    color: #00e600;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    font-family: "Chakra Petch", sans-serif;
+    overflow: hidden;
+    border-right: 0.1em solid #00e600;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 35%;
+    }
+  }
+
+  div.description {
+    flex: 1;
+    align-self: flex-start;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "Chakra Petch", sans-serif;
+    line-height: 1.2;
+  }
+
+  div.story {
+    flex: 1;
+    align-self: flex-start;
+    color: var(--white);
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+    font-weight: 300;
+    font-family: "Chakra Petch", sans-serif;
+    line-height: 1.1;
+    box-shadow: 0 0 20px rgb(106, 250, 39);
+    padding: 3%;
+    border-radius: 20px;
+  }
+
+  .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+    font-family: "Chakra Petch", sans-serif;
+    min-width: 400px;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .styled-table thead tr {
+    background-color: #24282e;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+  }
+
+  .styled-table tbody tr {
+    border-bottom: 1px solid #00e600;
+  }
+
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #24282e;
+  }
+
+  .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #00e600;
+  }
+
+  .styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #b252f1;
+  }
+
+  .styled-table tbody tr.strikeout td:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom: 1px solid #111;
+    width: 100%;
+  }
+
+  div.faqTitle {
+    flex: 1;
+    align-self: flex-start;
+    color: var(--white);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Chakra Petch", sans-serif;
+    line-height: 1.2;
+  }
+
+  div.beyond {
+    color: var(--white);
+    font-size: 50px;
+    font-weight: 300;
+    font-family: "Chakra Petch", sans-serif;
+  }
+
+  div.countdown {
+    color: white;
+    font-size: 50px;
+    font-family: "Chakra Petch", sans-serif;
+    padding: 10;
+    background-color: transparent;
+    font-weight: 200;
+  }
+}
