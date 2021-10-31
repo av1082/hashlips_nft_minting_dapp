@@ -275,7 +275,7 @@ function App() {
           <s.SpacerSmall/>
           <s.SpacerSmall/>
           <div style={{display: "flex", flexDirection: "column", alignSelf: "center"}}>
-          <div class="soon">COMING OCT 30th...</div>
+          <div class="soon">MINTING IS OPEN!</div>
 
           </div>
 
