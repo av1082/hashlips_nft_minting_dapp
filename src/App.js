@@ -390,9 +390,9 @@ function App() {
                     </s.Container>
                     <s.SpacerSmall/>
                     <s.SpacerSmall/>
-                    <div class="subtitle" style={{alignSelf: "center", color: "white", letterSpacing: "0.2em"}}>
+                    {/* <div class="subtitle" style={{alignSelf: "center", color: "white", letterSpacing: "0.2em"}}>
                       SOLD: {data.totalSupply} / {CONFIG.MAX_SUPPLY}
-                    </div>
+                    </div> */}
                   </>
 
                 )}
