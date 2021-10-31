@@ -720,16 +720,31 @@ function App() {
           </div>
           <s.SpacerMedium />
 
-          <s.Billies style={{alignItems: "center", flexWrap: "wrap", padding: 10}}>
+          <s.Billies style={{alignItems: "flex-start", flexWrap: "wrap", padding: 10}}>
 
             <div style={{padding: 20}}>
               <img src={Kleidi} alt="Logo" style={{borderRadius: 40, border: "3px solid #00e600", width: 250, height: 250}}/>
+              <s.SpacerXSmall/>
               <s.TextDescription style={{color: "white", backgroundColor: "transparent", fontWeight: 600}}>KLEIDI
               <s.SocialsButtonKleidi href="https://www.linkedin.com/in/kleidimico/" target="_blank">
               <s.LinkedIn/>
               </s.SocialsButtonKleidi>
-              <div style={{fontSize: 25, fontWeight: 500}}>Project Lead
+              <div style={{fontSize: 25, fontWeight: 500}}> Co-Founder
               </div>
+              <div style={{fontSize: 25, fontWeight: 500}}> Project Lead
+              </div>
+              </s.TextDescription>
+            </div>
+
+            <div style={{padding: 20}}>
+            <img src={Anna} alt="Logo" style={{borderRadius: 40, border: "3px solid #00e600", width: 250, height: 250}}/>
+            <s.SpacerXSmall/>
+              <s.TextDescription style={{alignSelf: "center", color: "white", fontWeight: 600 }}>ANYA
+              <s.SocialsButtonAnna href="https://github.com/av1082" target="_blank">
+              <s.Git/>
+              </s.SocialsButtonAnna>
+              <div style={{fontSize: 25, fontWeight: 500}}>Co-Founder</div>
+              <div style={{fontSize: 25, fontWeight: 500}}>Developer</div>
               </s.TextDescription>
             </div>
 
@@ -755,16 +770,7 @@ function App() {
               </s.TextDescription>
             </div>
 
-            <div style={{padding: 20}}>
-            <img src={Anna} alt="Logo" style={{borderRadius: 40, border: "3px solid #00e600", width: 250, height: 250}}/>
-            <s.SpacerXSmall/>
-              <s.TextDescription style={{alignSelf: "center", color: "white", fontWeight: 600 }}>ANYA
-              <s.SocialsButtonAnna href="https://github.com/av1082" target="_blank">
-              <s.Git/>
-              </s.SocialsButtonAnna>
-              <div style={{fontSize: 25, fontWeight: 500}}>Developer</div>
-              </s.TextDescription>
-            </div>
+
           </s.Billies>
         </div>
 
