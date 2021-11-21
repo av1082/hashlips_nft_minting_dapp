@@ -2,9 +2,9 @@
   "CONTRACT_ADDRESS": "0x10f99A3A51d2CCfce332930D77B8Ab5f37ae79E6",
   "SCAN_LINK": "https://etherscan.io/address/0x10f99A3A51d2CCfce332930D77B8Ab5f37ae79E6",
   "NETWORK": {
-    "NAME": "Polygon",
-    "SYMBOL": "Matic",
-    "ID": 137
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 1
   },
   "NFT_NAME": "CryptoBillies",
   "SYMBOL": "CB",
