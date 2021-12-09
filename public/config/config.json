@@ -10,7 +10,7 @@
   "SYMBOL": "CB",
   "MAX_SUPPLY": 10000,
   "WEI_COST": 20000000000000000,
-  "DISPLAY_COST": 0.02,
+  "DISPLAY_COST": 50,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/crypto-billies",
