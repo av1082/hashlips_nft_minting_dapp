@@ -269,7 +269,7 @@ function App() {
 
 
         <div style={{paddingLeft: "5%", paddingRight: 60, paddingTop: 20}}>
-          <div className="title"><span style={{color: "white", fontWeight: 400}}>10,000 BILLIES LIVING ON</span> <span style={{color: "#950bf1", fontWeight: 800}}>ETHEREUM</span>
+          <div className="title"><span style={{color: "white", fontWeight: 400}}>10,000 BILLIES LIVING ON</span> <span style={{color: "#950bf1", fontWeight: 800}}>POLYGON</span>
             </div>
           <s.SpacerSmall/>
           <s.SpacerSmall/>
