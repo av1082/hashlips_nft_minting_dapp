@@ -436,32 +436,32 @@ function App() {
                 <tr className="active-row">
                     <td>2</td>
                     <td>51-300</td>
-                    <td>0.02 ETH</td>
+                    <td>50 MATIC</td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>301-1500</td>
-                    <td>0.04 ETH</td>
+                    <td>TBD</td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>1501-5000</td>
-                    <td>0.08 ETH</td>
+                    <td>TBD</td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td>5001-7500</td>
-                    <td>0.12 ETH</td>
+                    <td>TBD</td>
                 </tr>
                 <tr>
                     <td>6</td>
                     <td>7501-9950</td>
-                    <td>0.20 ETH</td>
+                    <td>TBD</td>
                 </tr>
                 <tr>
                     <td>7</td>
                     <td>9951-10000</td>
-                    <td>0.50 ETH</td>
+                    <td>TBD</td>
                 </tr>
             </tbody>
         </table>
